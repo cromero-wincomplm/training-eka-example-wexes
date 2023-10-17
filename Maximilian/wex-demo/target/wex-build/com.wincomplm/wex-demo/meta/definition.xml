@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<wex-definition>
+  <meta>
+    <group-id>com.wincomplm</group-id>
+    <artifact-id>wex-demo</artifact-id>
+    <display-name>Display name here</display-name>
+    <system>false</system>
+    <description>Description here</description>
+  </meta>
+  <build>
+    <version>
+      <major>1</major>
+      <minor>0</minor>
+      <beta>2</beta>
+      <revision/>
+    </version>
+    <host>
+      <release>12.1</release>
+    </host>
+  </build>
+  <install>
+    <extension action="demoHelloWorld" file="PartClient-actionmodels" menu="more parts actions"/>
+    <extension action="demoHelloWorldNonPop" file="navigation-actionModels" menu="header actions"/>
+    <actions>
+      <wizard name="demoHelloWorld" shortcut="false" url="demo.jsp"/>
+      <page name="demoHelloWorldNonPop" url="demo.jsp"/>
+    </actions>
+  </install>
+  <additional>
+    <trial/>
+    <timestamp>0</timestamp>
+    <expires>0</expires>
+    <client-id/>
+    <client-name/>
+    <user-id/>
+  </additional>
+</wex-definition>
